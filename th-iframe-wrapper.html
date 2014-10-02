@@ -1,0 +1,26 @@
+<link rel="import" href="../polymer/polymer.html">
+<link rel="import" href="../th-animated/th-animated.html">
+
+<!--
+Element is a simple wrapper for an iframe to be used in the Thelma Composer.
+
+##### Example
+
+    <th-iframe-wrapper width="300" height="300">
+      <iframe width='100%' height='100%' src='http://www.thelma.co'></iframe>
+    </th-iframe-wrapper>
+
+@element th-iframe-wrapper
+@blurb Element providing a wrapper for iframes for the Thelma Composer
+@status alpha
+@homepage http://polymerlabs.github.io/th-iframe-wrapper
+-->
+<polymer-element  extends="th-animated" name="th-iframe-wrapper" attributes="width height" noscript>
+
+  <template>  
+    <div style="overflow:scroll;-webkit-overflow-scrolling:touch; width:{{width}}px; height: {{height}}px;">
+      <content select="iframe"></content>
+    </div>
+  </template>
+
+</polymer-element>
