@@ -20,10 +20,10 @@ Element is a simple wrapper for an iframe to be used in the Thelma Composer.
 @status alpha
 @homepage http://polymerlabs.github.io/th-iframe-wrapper
 -->
-<polymer-element  extends="th-animated" name="th-iframe-wrapper" attributes="url width height" noscript>
+<polymer-element  extends="th-animated" name="th-iframe-wrapper" attributes="url width height scale" noscript>
 
   <template>  
-    <div style="overflow:scroll;-webkit-overflow-scrolling:touch; width:{{width}}px; height: {{height}}px;">
+    <div style="overflow:scroll;-webkit-overflow-scrolling:touch; width:{{width}}px; height: {{height}}px; -webkit-transform: scale({{scale}}); -moz-transform: scale({{scale}})">
       <!-- Drop the in iframe provided in the content, unless a URL is given --> 
       <template if="{{!url}}">
         <content select="iframe"></content>
