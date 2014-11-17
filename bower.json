@@ -8,9 +8,7 @@
   ],
   "main": "th-iframe-wrapper.html",
   "dependencies": {
-    "polymer": "Polymer/polymer#^0.4.0"
-  },
-  "devDependencies": {
-    "polymer-test-tools": "Polymer/polymer-test-tools#^0.4.0"
+    "polymer": "Polymer/polymer#~0.5.1",
+    "th-animated": "https://github.com/thelmanews/th-animated.git"
   }
 }
